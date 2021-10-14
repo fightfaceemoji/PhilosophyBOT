@@ -1,7 +1,6 @@
 import discord 
 import os
 import random
-from keep_alive import keep_alive
 from quotelist import quotes
 from questionlist import questions
 
@@ -36,6 +35,5 @@ async def on_message(message):
    await message.channel.send('<@&839612636983197716>')
      
 
-keep_alive()
 
 client.run(os.getenv('TOKEN'))

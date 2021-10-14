@@ -1,5 +1,5 @@
 def questions():
-    R = [
+  R = [
   'What do you think of this?',
   'Do you agree? Why or Why not?',
   'What would your favorite philosopher think of this quote?',
