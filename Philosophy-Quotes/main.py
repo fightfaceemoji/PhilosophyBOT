@@ -101,7 +101,7 @@ token = os.getenv("token")
 
 client = discord.Client()
 
-TOKEN = input('token here please: ')
+
 
 @client.event
 async def on_ready():
@@ -129,4 +129,4 @@ async def on_message(message):
    await message.channel.send('<@&839612636983197716>')
      
 
-client.run(TOKEN)
+client.run(token)
