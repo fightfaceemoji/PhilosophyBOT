@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-token = os.getenv("token")
-
 L = [
  '“The unexamined life is not worth living” – Socrates.',
   '“Whereof one cannot speak, thereof one must be silent” – Ludwig Wittgenstein.',
@@ -99,6 +97,7 @@ R = [
   'Is this quote helpful to your understanding of the intended topic?'
 ]
 
+token = os.getenv("token")
 
 client = discord.Client()
 
@@ -130,4 +129,4 @@ async def on_message(message):
    await message.channel.send('<@&839612636983197716>')
      
 
-client.run(os.getenv(TOKEN))
+client.run(TOKEN)
