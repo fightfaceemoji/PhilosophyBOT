@@ -1,14 +1,15 @@
-const Discord = require("discord.js"); // Requires the npm package 'discord.js'.
-const client = new Discord.Client(); // Create an instance of Discord#Client
-const config = require("./config.json");
-client.login(config.token); // Uses value of key 'token' in config file.
+// Require the necessary discord.js classes
+const { Client, Intents } = require('discord.js');
+const { token } = require('./config.json');
 
-client.on("message", (message) => {
-if(message.content == "!ping"){ // Check if content of message is "!ping"
-		message.channel.send("pong!"); // Call .send() on the channel object the message was sent in
-	}
-if("guildMemberAdd", (member) => { // EventEmitter, nothing new
-        message.channel.send("HI!")
-    }
+// Create a new client instance
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+
+// When the client is ready, run this code (only once)
+client.once('ready', () => {
+	console.log('Ready!');
 });
+
+// Login to Discord with your client's token
+client.login(token);
 
