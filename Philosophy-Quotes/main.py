@@ -1,6 +1,7 @@
 import discord 
 import os
 import random
+from dotenv import load_dotenv
 
 L = [
  '“The unexamined life is not worth living” – Socrates.',
@@ -124,6 +125,5 @@ async def on_message(message):
    await message.channel.send(R[r])
    await message.channel.send('<@&839612636983197716>')
      
-
 
 client.run(os.getenv(TOKEN))
