@@ -3,6 +3,10 @@ import os
 import random
 from dotenv import load_dotenv
 
+load_dotenv()
+
+token = os.getenv("token")
+
 L = [
  '“The unexamined life is not worth living” – Socrates.',
   '“Whereof one cannot speak, thereof one must be silent” – Ludwig Wittgenstein.',
