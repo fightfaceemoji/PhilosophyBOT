@@ -6,7 +6,7 @@ from questionlist import questions
 
 client = discord.Client()
 
-TOKEN = input(token here please: )
+TOKEN = input('token here please: ')
 
 quotes()
 questions()
