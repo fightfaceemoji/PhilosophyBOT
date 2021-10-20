@@ -2,10 +2,6 @@ import discord
 import os
 import random
 
-token =
-
-
-
 L = [
  '“The unexamined life is not worth living” – Socrates.',
   '“Whereof one cannot speak, thereof one must be silent” – Ludwig Wittgenstein.',
@@ -97,8 +93,6 @@ R = [
   'What does this philosopher taken for granted in their argument?',
   'Is this quote helpful to your understanding of the intended topic?'
 ]
-
-token = os.getenv("token")
 
 client = discord.Client()
 
