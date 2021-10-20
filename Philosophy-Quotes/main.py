@@ -1,7 +1,9 @@
 import discord 
 import os
 import random
-from env import token
+
+token = os.getenv("token")
+
 
 
 L = [
