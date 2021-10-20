@@ -2,7 +2,7 @@ import discord
 import os
 import random
 
-token = os.getenv("token")
+token =
 
 
 
