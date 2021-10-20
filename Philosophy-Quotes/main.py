@@ -1,7 +1,7 @@
 import discord 
 import os
 import random
-import .env
+from env import token
 
 
 L = [
