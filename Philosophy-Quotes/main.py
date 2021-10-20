@@ -1,8 +1,7 @@
 import discord 
 import os
 import random
-from require import require
-require('fuck.env:dotenv')
+from .env import token
 
 
 L = [
