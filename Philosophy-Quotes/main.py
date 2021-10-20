@@ -1,9 +1,8 @@
 import discord 
 import os
 import random
-from dotenv import load_dotenv
+token = require('dotenv')
 
-load_dotenv()
 
 L = [
  '“The unexamined life is not worth living” – Socrates.',
