@@ -2,7 +2,7 @@ import discord
 import os
 import random
 from require import require
-token = require('dotenv')
+token = require('.env:dotenv')
 
 
 L = [
